@@ -1,5 +1,4 @@
-# kms
-kms-activation
+# kms-activation
 -------------------
 How to antivate windows server:
 ```
