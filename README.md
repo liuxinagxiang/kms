@@ -1,6 +1,6 @@
-# kms-activation
+# kms-activate
 -------------------
-How to antivate windows server:
+How to activate windows server:
 ```
 slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #windows server 企业版秘钥
 
