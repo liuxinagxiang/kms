@@ -1,6 +1,6 @@
 # kms-activate
 -------------------
-**How to activate windows server:**
+<font size=12>**How to activate windows server:**</font>
 ```
 slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #Windows Server 2008 R2 企业版秘钥
 
