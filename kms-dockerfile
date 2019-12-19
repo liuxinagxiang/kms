@@ -31,3 +31,6 @@ RUN runDeps="\
 EXPOSE 1688 80
 COPY supervisord.conf /etc/supervisord.conf
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
+
+# docekr pull liuxiangxiang/kms-1.1.0
+# docker run -d -p 1688:1688 -p 80:80 -v /docker/kms.conf:/etc/nginx/conf.d/default.conf --name kms1.1.0 --restart=always liuxiangxiang/kms-1.1.0
