@@ -2,7 +2,7 @@
 -------------------
 How to activate windows server:
 ```
-slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #windows server 企业版秘钥
+slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #Windows Server 2008 R2 企业版秘钥
 
 slmgr /skms kms.zhangyi.best	#激活服务器
 
