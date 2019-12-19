@@ -1,0 +1,33 @@
+# Dockerfile for KMS Server
+# Copyright (C) 2019 - 2020 liuxiangxiang <admin@zhangyi.best>
+# Reference URL:
+# https://github.com/liuxinagxiang/vlmcsd
+
+FROM alpine:latest
+LABEL maintainer="liuxiangxiang <admin@zhangyi.best>"
+
+ENV KMS_RELEASE https://github.com/liuxinagxiang/vlmcsd/archive/master.zip
+RUN runDeps="\
+		g++ \
+		gcc \
+		bash \
+		wget \
+		make \
+		unzip \
+	"; \
+	set -ex \
+	&& apk add --no-cache supervisor nginx --virtual .build-deps ${runDeps} \
+	&& mkdir /run/nginx/ \
+	&& cd /tmp \
+	&& wget -O vlmcsd.zip ${KMS_RELEASE} \
+	&& unzip vlmcsd.zip \
+	&& cd vlmcsd-master \
+	&& make \
+	&& cp -p bin/vlmcsd /usr/bin/ \
+	&& chmod 755 /usr/bin/vlmcsd \
+	&& rm -rf /tmp/vlmcsd.zip /tmp/vlmcsd-master \
+	&& apk del .build-deps
+
+EXPOSE 1688 80
+COPY supervisord.conf /etc/supervisord.conf
+CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
