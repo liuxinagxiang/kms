@@ -1,6 +1,6 @@
 # kms-activate
 ---
-<font size=12>How to activate windows server:</font>
+##  How to activate windows server:
 ```
 slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #Windows Server 2008 R2 企业版秘钥
 
@@ -36,7 +36,7 @@ slmgr /skms kms.zhangyi.best && slmgr /ato
 ```
 同样的方法可以升级为专业版、教育版等，以及版本退回切换（政府版升级不可逆）
 
-**How to antivate office:**
+##  How to antivate office:
 
 首先你的OFFICE必须是VOL版本，否则无法激活。 找到你的office安装目录，比如:
 ```
