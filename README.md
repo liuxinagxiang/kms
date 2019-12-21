@@ -126,5 +126,5 @@ cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
 [Windows] https://docs.microsoft.com/zh-cn/search/index?search=kms<br/>
 
 **Make your own activation-server with docker:**
->    [docker push liuxiangxiang/kms-activate](https://hub.docker.com/repository/docker/liuxiangxiang/kms-activate)
+>    [docker push liuxiangxiang/kms-activate](https://hub.docker.com/r/liuxiangxiang/kms-activate)
 ---
