@@ -125,6 +125,6 @@ cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
 [Office 2010] https://docs.microsoft.com/zh-cn/previous-versions/office/office-2010/ee624355(v=office.14)<br/>
 [Windows] https://docs.microsoft.com/zh-cn/search/index?search=kms<br/>
 
-**[Make your own activation server with docker](http://kms.zhangyi.best/)：**
->    docker push liuxiangxiang/kms-activate
+** Make your own activation server with docker：**
+>    [docker push liuxiangxiang/kms-activate](https://hub.docker.com/repository/docker/liuxiangxiang/kms-activate)
 ---
