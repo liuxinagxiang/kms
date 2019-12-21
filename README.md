@@ -110,8 +110,6 @@ cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
 
 以下key来源于微软官网：https://technet.microsoft.com/en-us/library/jj612867.aspx
 
-##  [Make your own activation server with docker](http://kms.zhangyi.best/). 
-
 **微软官方文档：**
 
 [Windows] https://docs.microsoft.com/zh-cn/windows/deployment/volume-activation/activate-using-key-management-service-vamt<br/>
@@ -126,4 +124,5 @@ cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
 [Office 2013] https://docs.microsoft.com/zh-cn/previous-versions/office/dn385360(v=office.15)<br/>
 [Office 2010] https://docs.microsoft.com/zh-cn/previous-versions/office/office-2010/ee624355(v=office.14)<br/>
 [Windows] https://docs.microsoft.com/zh-cn/search/index?search=kms<br/>
+>  [Make your own activation server with docker](http://kms.zhangyi.best/).
 ---
