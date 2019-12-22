@@ -36,7 +36,7 @@ slmgr /skms kms.zhangyi.best && slmgr /ato
 ```
 同样的方法可以升级为专业版、教育版等，以及版本退回切换（政府版升级不可逆）
 
-##  How to antivate office:
+##  How to activate office:
 
 首先你的OFFICE必须是VOL版本，否则无法激活。 找到你的office安装目录，比如:
 ```
@@ -126,5 +126,5 @@ cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
 [Windows] https://docs.microsoft.com/zh-cn/search/index?search=kms<br/>
 
 **Make your own activation-server with docker:**
->    [docker push liuxiangxiang/kms-activate](https://hub.docker.com/r/liuxiangxiang/kms-activate)
+>    [docker pull liuxiangxiang/kms-activate](https://hub.docker.com/r/liuxiangxiang/kms-activate)
 ---
