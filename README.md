@@ -7,10 +7,14 @@ slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #Windows Server 2008 R2 企业版秘�
 slmgr /skms kms.zhangyi.best	#激活服务器
 
 slmgr /ato #配置生效
+
+slmgr.vbs -dlv #查看激活状态
 ```
 **KMS 激活有 180 天期限,默认情况下系统每 7 天自动进行一次激活续订尝试。在续订客户端激活之后，激活有效期时间间隔将重新开始计算，重置为180天**<br/>
 
-kms激活的前提是你的系统是批量授权版本，即VL版，一般企业版都是VL版，专业版有零售和VL版，家庭版旗舰版OEM版等等那就肯定不能用kms激活。一般建议从http://msdn.itellyou.cn上面下载系统 VL版本的镜像一般内置GVLK key，用于kms激活。如果你手动输过其他key，那么这个内置的key就会被替换掉，这个时候如果你想用kms，那么就需要把GVLK key输回去。首先到 https://technet.microsoft.com/en-us/library/jj612867.aspx 获取你对应版本的KEY 如果打不开下面有对应的
+kms激活的前提是你的系统是批量授权版本，即VL版，一般企业版都是VL版，专业版有零售和VL版，家庭版旗舰版OEM版等等那就肯定不能用kms激活。一般建议从http://msdn.itellyou.cn上面下载系统 
+VL版本的镜像一般内置GVLK key，用于kms激活。如果你手动输过其他key，那么这个内置的key就会被替换掉，这个时候如果你想用kms，那么就需要把GVLK key输回去。
+首先到 https://technet.microsoft.com/en-us/library/jj612867.aspx 或者 https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys 获取你对应版本的KEY
 
 如果不知道自己的系统是什么版本，可以运行以下命令查看系统版本：
 ```
@@ -27,7 +31,7 @@ Windows10 最新版微软官方下载地址：https://www.microsoft.com/zh-cn/so
 该版本安装完默认为 Windows10 家庭版（RTL版）依照以下命令升级为企业版（VOL版）并激活。
 
 1.使用 Win+i 快捷键打开「设置」- 点击「更新和安全」- 在左侧点击「激活」选项卡点击右侧的「更改产品密钥按钮」，输入Key：NPPR9-FWDCX-D2C8J-H872K-2YT43
-如果提示密钥错误，请先输入如下密钥升级为专业版后，再输入企业版或者其他版本密钥进行升级：VK7JG-NPHTM-C97JM-9MPGT-3V66T
+如果提示密钥错误，请先输入如下密钥升级为专业版后，再输入企业版或者其他版本密钥进行升级.专业版秘钥：VK7JG-NPHTM-C97JM-9MPGT-3V66T
 
 2.按提示升级后打开命令提示符(管理员)逐行执行以下命令：
 ```
