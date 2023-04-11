@@ -36,7 +36,7 @@ Windows10 最新版微软官方下载地址：https://www.microsoft.com/zh-cn/so
 2.按提示升级后打开命令提示符(管理员)逐行执行以下命令：
 ```
 slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
-slmgr /skms kms.zhangyi.best && slmgr /ato
+slmgr /skms kms.zhangyi.cf && slmgr /ato
 ```
 同样的方法可以升级为专业版、教育版等，以及版本退回切换（政府版升级不可逆）
 
@@ -57,7 +57,7 @@ cd C:\Program Files (x86)\Microsoft Office\Office16
 ```
 然后执行注册kms服务器地址：
 ```
-cscript ospp.vbs /sethst:kms.zhangyi.best
+cscript ospp.vbs /sethst:kms.zhangyi.cf
 ```
 一般来说，“一句命令已经完成了”，但一般office不会马上连接kms服务器进行激活，所以我们额外补充一条手动激活命令：
 ```
@@ -101,7 +101,7 @@ cscript ospp.vbs /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
 ```
 4.激活
 ```
-cscript ospp.vbs /sethst:kms.zhangyi.best && cscript ospp.vbs /act
+cscript ospp.vbs /sethst:kms.zhangyi.cf && cscript ospp.vbs /act
 ```
 **查看已安装的Windows或Office是否为VOL版：**
 
