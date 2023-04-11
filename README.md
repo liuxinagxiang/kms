@@ -4,7 +4,7 @@
 ```
 slmgr /ipk 489J6-VHDMP-X63PK-3K798-CPX3Y  #Windows Server 2008 R2 企业版秘钥
 
-slmgr /skms kms.zhangyi.best	#激活服务器
+slmgr /skms kms.zhangyi.cf	#激活服务器
 
 slmgr /ato #配置生效
 
